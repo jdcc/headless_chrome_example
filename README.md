@@ -49,4 +49,4 @@ See LICENCE
 Copyright
 ---------
 
-Copyright 2017 President and Fellow of Harvard College
+Copyright 2017 President and Fellows of Harvard College
