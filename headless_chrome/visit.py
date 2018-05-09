@@ -47,7 +47,7 @@ def run(url, vpnconfig=None, vpnauth=None):
     if vpn:
         teardown_vpn(vpn)
 
-if __name__ == '__main__':
+def main():
     args = parse_args()
     logging.basicConfig(level=logging.DEBUG)
     logging.getLogger('websockets.protocol').setLevel(logging.WARNING)
