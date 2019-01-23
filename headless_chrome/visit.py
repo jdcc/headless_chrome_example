@@ -1,6 +1,6 @@
 import argparse, asyncio, logging, subprocess, time, os.path
 
-from client import record_navigation
+from .client import record_navigation
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Visits a web page in headless chrome")

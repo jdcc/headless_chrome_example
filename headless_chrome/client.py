@@ -6,7 +6,9 @@ BASE_TIMEOUT = 90.0
 SLEEP_BEFORE_NAV = 8
 
 class Client:
-    def __init__(self, exec_path=DEFAULT_CHROME, headless=True):
+    def __init__(self, exec_path, headless=True):
+        if exec_path is None:
+            exec_path = DEFAULT_CHROME
         self.path = exec_path
         self.loop = asyncio.get_event_loop()
         self.command_id = 0
